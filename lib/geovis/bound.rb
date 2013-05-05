@@ -1,6 +1,5 @@
 module GeoVis
   module Bound
-    include Base
 
     def Bound.in_rect(relation, bbox)
       bbox_f = bbox.map { |el| el.to_f }

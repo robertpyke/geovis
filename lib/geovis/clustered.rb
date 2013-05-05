@@ -1,8 +1,6 @@
 module GeoVis
   module Clustered
 
-    include Base
-
     # Clusters the relation, returning:
     #
     # +cluster_geometry_count+:: the size of the cluster.

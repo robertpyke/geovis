@@ -1,10 +1,6 @@
 module GeoVis
   module BoundAndClustered
 
-    include Base
-    include Clustered
-    include Bound
-
     # The smallest grid size for which clustering is enabled.
     # Below this value, grid size is set to nil (no clustering).
     MIN_GRID_SIZE_BEFORE_NO_CLUSTERING = 0.01

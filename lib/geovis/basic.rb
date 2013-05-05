@@ -1,6 +1,5 @@
 module GeoVis
   module Basic
-    include Base
 
     # The Basic visualisation technique simply outputs all features that
     # it finds.

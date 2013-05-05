@@ -13,6 +13,10 @@ module GeoVis
       GeoVis.logger.info("Time took to get features: #{took_t}s")
     end
 
+    def get_features(options)
+      features(options)
+    end
+
     def features
       raise NotImplementedError, "features is not yet implemented for this class"
     end
