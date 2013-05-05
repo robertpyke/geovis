@@ -5,11 +5,11 @@ require 'geovis/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "geovis"
-  spec.version       = Geovis::VERSION
+  spec.version       = GeoVis::VERSION
   spec.authors       = ["Robert Pyke"]
   spec.email         = ["robert.j.pyke@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{GeoVis}
+  spec.summary       = %q{GeoVis}
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -18,6 +18,14 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.3"
-  spec.add_development_dependency "rake"
+  # Development Dependencies
+  spec.add_development_dependency('bundler')
+  spec.add_development_dependency('rake')
+  spec.add_development_dependency('test-unit', '~> 2.5.4')
+  spec.add_development_dependency('rdoc')
+
+  # Deployed Gem Dependencies
+  spec.add_dependency('rgeo', '~> 0.3.20')
+  spec.add_dependency('rgeo-geojson', '~> 0.2.3')
+  spec.add_dependency('rgeo-activerecord')
 end
